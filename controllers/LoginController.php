@@ -105,9 +105,12 @@ class LoginController {
     }
 
     public static function confirmar(Router $router){
-        $token = s($_GET['token']); //leer el token de la url
+        $token = s($_GET['token']); //leer el token de la url ydanitizarlo
+
         
         $usuario = Admin::where('token', $token);
+
+        debuguaer($usuario);
         
         if(empty($usuario)){
             // Mostrar el mensaje de error
