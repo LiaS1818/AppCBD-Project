@@ -95,7 +95,9 @@ class ActiveRecord{
         //
         
         $resultado = self::$db->query($query);
-        return $resultado;
+       
+	return $resultado;
+	
         // Mensaje de exito
         // if ($resultado ) {
         //     //Redireccionar al usuario

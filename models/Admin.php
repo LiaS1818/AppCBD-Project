@@ -6,9 +6,8 @@ class Admin extends ActiveRecord {
     // Base de datos
 
     protected static $tabla = 'clientes';
-    protected static $columnasDB = ['id','nombre', 'apellido', 'email', 'contrasena', 'telefono', 'admin', 'confirmado', 'token'];
+    protected static $columnasDB = ['nombre', 'apellido', 'email', 'contrasena', 'telefono', 'admin', 'confirmado', 'token'];
 
-    public $id;
     public $nombre;
     public $apellido;
     public $email;
@@ -21,7 +20,7 @@ class Admin extends ActiveRecord {
 
     public function __construct($args = [])
     {
-        $this->id = $args['id'] ?? null; //place holders
+       // $this->id = $args['id'] ?? null; //place holders
         $this->nombre = $args['nombre'] ?? '';
         $this->apellido = $args['apellido'] ?? '';
         $this->telefono = $args['telefono'] ?? '';

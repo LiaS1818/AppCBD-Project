@@ -26,19 +26,18 @@ class Router {
         $rutas_protegidas = ['/admin'];
 
         
-//        $auth = $_SESSION['login'] ?? null;
+	
+      
         
-        
-        $urlActual = $_SERVER['REQUEST_URI'] ?? '/';
-        $urlParseada = parse_url($urlActual, PHP_URL_PATH);
-	$metodo = $_SERVER['REQUEST_METHOD'];
+        $urlActual = $_SERVER['PATH_INFO'] ?? '/';
+        $metodo = $_SERVER['REQUEST_METHOD'];
 
         
 
         if ($metodo === 'GET') {
-            $fn = $this->rutasGET[$urlParseada] ?? null;
+            $fn = $this->rutasGET[$urlActual] ?? null;
         } else {
-            $fn = $this->rutasPOST[$urlParseada] ?? null;
+            $fn = $this->rutasPOST[$urlActual] ?? null;
         }
 
 

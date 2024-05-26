@@ -49,7 +49,7 @@ class Email {
         $contenido .= "<div class='container'>";
         $contenido .= "<h1>Hola " . $this->nombre . "</h1>";
         $contenido .= "<p>Has creado tu cuenta en App CBDSolutions. Para confirmar, presiona el siguiente enlace:</p>";
-        $contenido .= "<p><a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar cuenta</a></p>";
+        $contenido .= "<p><a href='http://192.168.73.49/confirmar-cuenta?token=" . $this->token . "'>Confirmar cuenta</a></p>";
         $contenido .= "<p>Si tú no solicitaste esta cuenta, puedes ignorar este mensaje.</p>";
         $contenido .= "</div>";
         $contenido .= "</body></html>";
