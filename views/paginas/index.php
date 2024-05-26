@@ -20,7 +20,7 @@
         </div>
         <div class="contenido-empresa">
     
-            <p class="quienes">¿Quienes somos?</p>
+            <p class="quienes">¿Quienes somos? Hola</p>
             <p>Somos una Startup que se enfoca en la creación de productos de alta calidad con CBD para brindar a nuestros clientes una experiencia gastronómica única y saludable. Nos enfocamos en la calidad, la innovación, la salud y la sostenibilidad para ofrecer una opción única en el mercado de la comida saludable y el CBD.</p>
         </div>
     </section>
