@@ -56,6 +56,7 @@ class ActiveRecord{
         $query .= " ) VALUES ('";  
         $query .= join("', '", array_values($atributos));   
         $query .= "')";
+        debuguear($query);
 
         // $trigger = "
         // DELIMITER //
