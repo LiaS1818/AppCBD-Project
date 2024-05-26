@@ -110,7 +110,7 @@ class LoginController {
         
         $usuario = Admin::where('token', $token);
 
-        debuguear($usuario);
+    
         
         if(empty($usuario)){
             // Mostrar el mensaje de error
